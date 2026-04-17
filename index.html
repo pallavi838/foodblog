@@ -6,26 +6,49 @@
     <title>food blog</title>
 </head>
 <body>
-    <header style="height:110px;background-color: violet; display:flex">
-        <img src="./logo.jpg" alt="logo" width="50px"height="50px"/>
-        <h2><i>food blog</i></h2>
+    <header style="height:110px;background-color: violet; display:flex; align-items: center; padding: 0 20px;">
+        <img src="./logo.jpg" alt="logo" width="50px" height="50px" style="margin-right: 20px;"/>
+        <h2 style="margin: 0; flex-grow: 1;"><i>Food Blog</i></h2>
         <nav>
-            <ul style="display: flex;list-style-type:none;">
-                <li>home</li>
-                <li>about</li>
-                <li>items</li>
-                <li>bookings</li>
-                <li>login</li>
+            <ul style="display: flex; list-style-type:none; margin: 0; padding: 0; gap: 20px;">
+                <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="#" style="color: white; text-decoration: none;">About</a></li>
+                <li><a href="#" style="color: white; text-decoration: none;">Items</a></li>
+                <li><a href="#" style="color: white; text-decoration: none;">Bookings</a></li>
+                <li><a href="#" style="color: white; text-decoration: none;">Login</a></li>
             </ul>
         </nav>
     </header>
-    <main style="height:70px;background-color:pink">
-        <aside style="height:70px;width:200px;background-color:lightblue"></aside>
-        <div style="display: flex;">
-            <article style="height:70px;width:1200px;background-color:darkgreen"></article>
+    <main style="min-height:70vh; background-color:pink; padding: 20px;">
+        <aside style="height: auto; width:200px; background-color:lightblue; float: left; padding: 10px; margin-right: 20px;">
+            <h3>Categories</h3>
+            <ul>
+                <li>Recipes</li>
+                <li>Reviews</li>
+                <li>Tips</li>
+            </ul>
+            <img src="https://source.unsplash.com/random/200x150/?food" alt="Food Category" style="width: 100%; margin-top: 10px;">
+        </aside>
+        <div style="display: flex; flex-direction: column;">
+            <article style="min-height:300px; width: calc(100% - 240px); background-color:darkgreen; padding: 20px; color: white;">
+                <h2>Welcome to Our Food Blog</h2>
+                <p>Discover delicious recipes, food reviews, and cooking tips from around the world.</p>
+                <div style="display: flex; gap: 10px; margin-top: 20px;">
+                    <img src="https://source.unsplash.com/random/300x200/?pizza" alt="Pizza" style="width: 30%;">
+                    <img src="https://source.unsplash.com/random/300x200/?pasta" alt="Pasta" style="width: 30%;">
+                    <img src="https://source.unsplash.com/random/300x200/?salad" alt="Salad" style="width: 30%;">
+                </div>
+            </article>
+            <section style="min-height:200px; width: calc(100% - 240px); background-color:purple; padding: 20px; margin-top: 20px; color: white;">
+                <h3>Featured Recipe</h3>
+                <p>Try this amazing chocolate cake recipe that's sure to impress your guests!</p>
+                <img src="https://source.unsplash.com/random/400x250/?cake" alt="Chocolate Cake" style="width: 50%; margin-top: 10px;">
+            </section>
         </div>
-        <section style="height:70px; width:700px; background-color:purple"></section>
     </main>
-    <footer style="height:70px;background-color:darkred"></footer>
+    <footer style="height: auto; background-color:darkred; padding: 20px; color: white; text-align: center;">
+        <p>&copy; 2026 Food Blog. All rights reserved.</p>
+        <img src="https://source.unsplash.com/random/200x100/?restaurant" alt="Restaurant" style="width: 200px; height: 100px; margin-top: 10px;">
+    </footer>
 </body>
 </html>
